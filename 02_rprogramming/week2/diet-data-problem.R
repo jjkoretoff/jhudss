@@ -98,7 +98,7 @@ median(dat$Weight)
 #problem. solved.
 median(dat$Weight, na.rm = TRUE)
 
-#find the mean weight of day 30
+#find the median weight of day 30
 dat_30 <- dat[which(dat[, "Day"] == 30),]
 dat_30
 median(dat_30$Weight, na.rm = TRUE)
