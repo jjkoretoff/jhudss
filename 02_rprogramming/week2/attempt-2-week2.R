@@ -48,9 +48,10 @@ complete <- function(directory, id = 1:332) {
       output_subset <- output[(output[, "ID"] %in% id),]
       
       nobs <- nrow(na.omit(output_subset))
-      list <- data.frame(id, nobs)
-      list
+      nobs
+#      list <- data.frame(id, nobs)
+#      list
 }
 
 complete("spec_data", 1)
-complete("spec_data", c(2, 4, 8, 10, 12))
+complete("spec_data", 2)
